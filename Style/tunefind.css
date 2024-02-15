@@ -1,0 +1,1479 @@
+:root{
+    --clr-dark:#0f1113;
+    --clr-text:#4338CA;
+    --clr-text2:#6366F1;
+    --clr-white:#F3F4F6;
+    --btn-color:#1D4ED8;
+
+    --size-xxs:.5rem;
+    --size-xs:.75rem;
+    --size-sm:.87rem;
+    --size-base:1rem;
+    --size-lg:1.125rem;
+    --size-xl:1.25rem;
+    --size-2xl:1.5rem;
+    --size-3xl:1.875;
+    --size-4xl:2.25rem;
+    --size-5xl:3rem;
+    --size-6xl:3.75rem;
+    --size-7xl:4.5rem;
+    --size-8xl:6rem;
+    --size-9xl:8rem;
+    --size-10xl:10rem;
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 16, 0.929);
+    color: white;
+    border: 1px solid rd;
+}
+
+/start of nav/
+
+.nav-container{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding: .5rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: sticky;    
+        
+ }
+
+
+.logo-holder{
+    height: 3.5rem;
+    width: 10rem;
+    margin-right:auto;
+    
+
+}
+
+.nav-logo{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+}
+
+
+.search-bar{
+    width: 100%;
+    max-width: 130px;
+    background-color: rgba(222, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 4rem;
+    padding: .1rem;
+
+}
+
+.search-bar input{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 8px 6px;
+    display: none; /change to display none for smaller @ >960 screen site for mobile view/
+}
+.search-icon{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 8px 6px;
+
+}
+
+
+.nav-links{
+    display: none;   /change to display none for smaller @ >960 screen site for mobile view/
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+}
+
+
+.nav-link{
+    margin: .3rem;
+    padding: .3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.nav-items{
+    margin: ato;
+    display: none;
+    border: 2px red;
+    margin-left: rem;
+}
+.nav-btn1{
+    padding: 1rem;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    outline: none;
+    font: var(--size-10xl);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.nav-btn2{
+    padding: 1rem;
+    background-color: skyblue;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font: var(--size-10xl);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+
+}
+
+.nav-line{
+    display: block ;
+    padding: 1rem;
+    display: none
+    
+    
+}
+/
+
+
+/hero section/
+
+.slider-container .wrapper{
+    width: 100%;
+    height: 75vh;
+    border: 2px sold blue;
+    overflow: hidden;
+}
+
+.slider-container .slider-holder{
+    display: grid;
+    grid-template-columns: 100% 100% 100%; /we can use repeat(3, 100%) 3 is number of column, 100% ia the width of the view port/
+    height: 100%;
+    animation: slide 15s ease infinite;
+    
+}
+
+
+.slider-container #slider-image-1{
+    background: lawngreen;
+    background: url(../images/power.jpeg);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    
+
+}
+
+/* start of image text 1*/
+.image-text{
+    position: absolute;
+    top:43% ;
+    left:10%;
+    padding: .4rem;
+    margin: .4rem;
+    border: ;
+    background: none;
+    z-index: 2;
+
+}
+.image-text p{
+    font-weight: bold;
+    background: none;
+    padding: .2rem;
+    color: white;
+    font-size: 1.5rem;
+    
+}
+.image-text h2{
+    background: none;
+    font-size: 2.5rem;
+    color: white;
+}
+.image-text .track1{
+    color: rgb(15, 143, 194);
+    background: none;
+    font-size: 1.3rem;
+}
+.exp{
+    padding: 1rem;
+    background-color: rgb(15, 143, 194);
+    color: white;
+    border-radius: .5rem;
+    border: none;
+    width: 7rem;
+    font-size: 1.1rem;
+}
+
+/* end of image text 1*/
+
+
+
+/* start of image text 2*/
+
+.image-text-2{
+    position: absolute;
+    top:43% ;
+    left:110%;
+    padding: .4rem;
+    margin: .4rem;
+    background: none;
+    z-index: 2;
+    width: 20rem;
+    
+
+}
+.image-text-2 p{
+    font-weight: bold;
+    background: none;
+    padding: .2rem;
+    color: white;
+    font-size: 1.5rem;
+    
+}
+
+.image-text-2 .track2{
+    color: rgb(15, 143, 194);
+    background: none;
+    font-size: 1.3rem;
+}
+.image-text-2 h2{
+    background: none;
+    font-size: 2.5rem;
+    color: white
+}
+
+/* end of image text 2*/
+
+
+/* start of image text 3*/
+
+
+.image-text-3{
+    position: absolute;
+    top:43%;
+    left:210%;
+    padding: .4rem;
+    margin: .4rem;
+    background: none;
+    z-index: 2;
+    width: 25rem;
+    
+
+}
+.image-text-3 .track3{
+    color:  rgb(24, 139, 184);
+    background: none;
+    font-size: 1.3rem;
+}
+
+.image-text-3 p{
+    font-weight: bold;
+    background: none;
+    padding: .2rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.image-text-3 h2{
+    background: none;
+    font-size: 2.5rem;
+    color: white
+}
+
+
+
+
+.slider-container #slider-image-2{
+    background: yellow;
+    background: url(../images/sex.jpeg);
+    background-size: cover;
+}
+
+.slider-container #slider-image-3{
+    background: tomato;
+    background: url(../images/love.jpeg);
+    background-size: cover;
+}
+
+
+/* end of image text */
+
+
+/start of movies slider section/
+.slider-container .wrapper{
+    width: 100%;
+    height: 75vh;
+    border: ;
+    overflow: hidden;
+}
+
+.slider-container .slider-holder{
+    display: grid;
+    grid-template-columns: 100% 100% 100%; /we can use repeat(3, 100%) 3 is number of column, 100% ia the width of the view port/
+    height: 100%;
+    animation: slide 15s ease infinite;
+    
+}
+
+
+.slider-container #slider-movies-1{
+    background: lawngreen;
+    background: url(../images/paw.jpeg);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    
+
+}
+
+/* start of image text 1*/
+.image-text{
+    position: absolute;
+    top:43%;
+    left:10%;
+    padding: .4rem;
+    margin: .4rem;
+    background: none;
+    z-index: 2;
+
+}
+.image-text p{
+    font-weight: bold;
+    background: none;
+    padding: .2rem;
+    color: white;
+    font-size: 1.5rem;
+    
+}
+.image-text h2{
+    background: none;
+    font-size: 2.5rem;
+    color: white;
+}
+.image-text .track1{
+    color: rgb(15, 143, 194);
+    background: none;
+    font-size: 1.3rem;
+}
+.exp{
+    padding: 1rem;
+    background-color: rgb(15, 143, 194);
+    color: white;
+    border-radius: .5rem;
+    border: none;
+    width: 7rem;
+    font-size: 1.1rem;
+}
+
+/* end of image text 1*/
+
+
+
+/* start of image text 2*/
+
+.image-text-2{
+    position: absolute;
+    top:43% ;
+    left:110%;
+    padding: .4rem;
+    margin: .4rem;
+    background: none;
+    z-index: 2;
+    width: 20rem;
+    
+
+}
+.image-text-2 p{
+    font-weight: bold;
+    background: none;
+    padding: .2rem;
+    color: white;
+    font-size: 1.5rem;
+    
+}
+
+.image-text-2 .track2{
+    color: rgb(15, 143, 194);
+    background: none;
+    font-size: 1.3rem;
+}
+.image-text-2 h2{
+    background: none;
+    font-size: 2.5rem;
+    color: white
+}
+
+/* end of image text 2*/
+
+
+/* start of image text 3*/
+
+
+.image-text-3{
+    position: absolute;
+    top:43% ;
+    left:210%;
+    padding: .4rem;
+    margin: .4rem;
+    background: none;
+    z-index: 2;
+    width: 25rem;
+    
+
+}
+.image-text-3 .track3{
+    color:  rgb(24, 139, 184);
+    background: none;
+    font-size: 1.3rem;
+}
+
+.image-text-3 p{
+    font-weight: bold;
+    background: none;
+    padding: .2rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.image-text-3 h2{
+    background: none;
+    font-size: 2.5rem;
+    color: white
+}
+
+
+
+
+.slider-container #slider-movies-2{
+    background: yellow;
+    background: url(../images/flora.jpg);
+    background-size: cover;
+}
+
+.slider-container #slider-image-3{
+    background: tomato;
+    background: url(../images/love.jpeg);
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/end of movie slider/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/start of 2nd section/
+.image-container-1{
+    margin: 1rem 0;
+    padding: 3rem 0;
+    
+
+}
+.mus{
+    width: 30%;
+    margin:.5rem 10% ;
+    padding: .2rem;
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.more{
+    margin-left: 1.2rem;
+    font-size: .9rem;
+}
+
+.box1{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    
+    
+   
+}
+.box1::-webkit-scrollbar{
+    display: none;
+}
+
+.slider2-images{
+
+    
+    width: 100%;
+    height: 100%;  
+    display: flex;
+    flex-direction: row;
+    animation: trans 20s ease  infinite;
+    transition: all 6s ease-in-out;
+    position: reltive;
+    gap: 1rem;
+    
+    
+
+
+}
+
+.movie-hold{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+
+.movie-hold img{
+    width: 20rem;
+    height: 20rem;
+    position: relatve;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+
+.movie-text{
+    position: absolute;
+    border: 2px solid gld;
+    bottom: 0;
+    margin-bottom: .4rem;
+    margin-left: .4rem;
+    font-size: 1.7rem;
+    background: none;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+.one-p{
+    background-color: transparent;
+}
+
+
+
+.movie-hold img:hover{
+    
+    transform: scale(1.05);
+    z-index: 2;
+    cursor: pointer;
+    animation-play-state: paused !important;
+}
+movies img:active{
+ 
+    cursor: pointer;
+
+}
+
+
+
+
+
+/end of 2nd section/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/start of third section/
+
+.image-container-3{
+    margin: 1rem 0;
+    padding: 1rem 0;
+
+}
+.mus3{
+    width: 30%;
+    margin:.5rem 10% ;
+    padding: .2rem;
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.more3{
+    margin-left: 1.2rem;
+    font-size: .9rem;
+}
+
+.box2{
+    
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position: relatve;
+   
+}
+.box2::-webkit-scrollbar{
+    display: none;
+}
+
+
+.slider3-images{
+    width: 100%;
+    height: 100%;  
+    display: flex;
+    flex-direction: row;
+    animation: trans2 20s ease  infinite;
+    transition: all 6s ease-in-out;
+    gap: 1rem;
+    
+
+
+}
+.movies3 img:active{
+ 
+    cursor: pointer;
+
+}
+
+
+
+
+/end of third section/
+
+
+
+/start of 4th section/
+
+.image-container-4{
+    margin: 1rem 0;
+    padding: 1rem 0;
+
+}
+.mus4{
+    width: 30%;
+    margin:.5rem 10% ;
+    padding: .2rem;
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.more4{
+    margin-left: 1.2rem;
+    font-size: .9rem;
+}
+
+.box4{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position: relati;
+   
+}
+
+.box4::-webkit-scrollbar{
+    display: none;
+
+}
+
+
+.slider4-images{
+    width: 100%;
+    height: 100%;  
+    display: flex;
+    flex-direction: row;
+    animation: trans4 15s ease  infinite;
+    transition: all 6s ease-in-out;
+    gap: 1rem;
+
+
+}
+
+
+
+
+
+
+
+img:active{
+ 
+    cursor: pointer;
+
+}
+
+
+
+
+/end of 4th section/
+
+
+
+
+
+/start of 5th section/
+
+.advert-container-5{
+    margin: 1rem 0;
+    padding: 1rem 0;
+
+}
+.mus4{
+    width: 30%;
+    margin:.5rem 10% ;
+    padding: .2rem;
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.more4{
+    margin-left: 1.2rem;
+    font-size: .9rem;
+}
+
+
+
+
+
+.adverts{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+   
+}
+.adverts::-webkit-scrollbar{
+    display: none;
+}
+
+
+.advert-images{
+    width: 10%;
+    height: 10%;  
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    animation: ads 25s ease  infinite;
+    transition: all 15s ease-in-out;
+
+
+}
+
+
+.advert{
+    border:.5px solid rgb(30, 30, 35) ;
+    margin: .7rem;
+    width: 30vw;
+    height: 45vh;
+
+    
+}
+
+.advert img{
+    
+    display: block;
+    max-width: 30vw;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+    
+}
+
+.advert img:hover{
+    
+    transform: scale(1.05);
+    z-index: 2;
+    cursor: pointer;
+    animation-play-state: paused !important;
+}
+.adverts img:active{
+ 
+    cursor: pointer;
+
+}
+
+
+
+
+/end of 5th section/
+
+
+/start of 6th section/
+
+.tv-sch{
+
+    
+    margin: 4rem 0;
+}
+
+
+
+.tv-sch1{
+    width: 30%;
+    margin:1rem 10% ;
+    padding: .2rem;
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.tv{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.days-holder{
+    
+    width: 28%;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    
+    
+}
+h3{
+    border: 2px solid reen;
+    text-align: center;
+    background-color: rgb(46, 46, 46);
+    border-radius: 3px;
+    padding: .6rem;
+}
+
+.moviez-holder{
+    
+    height: 10rem;
+    margin-top: .5rem;
+    position: relative;
+    
+    
+    
+    
+}
+
+.moviez-holder img{
+    width: 100%;
+    border-radius: .4rem;
+    height: 100%;
+    
+   
+    
+    
+}
+
+.tt{
+    width: 100%;
+    height: 1.5rem;
+    border-radius: 0 0 0.4rem.4rem;
+    
+    position: absolute;
+    bottom: 0;
+    height: 2rem;
+    background: white !important;
+   
+
+}
+.tt p{
+    text-align: center;
+    color: black;
+    margin-top: .3rem;
+    background-color: white;
+    z-index: 3;
+
+}
+
+
+.btn1{
+    background-color: rgb(46, 46, 46);
+    color: white;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+    padding: .7rem;
+    width: 100%;
+    border: none;
+    border-radius: .4rem;
+    height: 2.5rem
+    
+    
+    
+}
+
+.btn2{
+    background-color: rgb(46, 46, 46);
+    color: white;
+    margin-bottom: .5rem;
+    padding: .7rem;
+    width: 100%;
+    border: none;
+    border-radius: .4rem;
+    height: 2.5rem
+    
+
+}
+.btn1:hover{
+    background: rgb(247, 194, 194);
+    color: black;
+}
+
+.btn2:hover{
+    background: rgb(247, 194, 194);
+    color: black;
+}
+
+
+/end of 6th section/
+
+
+/footer section/
+
+.footer{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+
+}
+.footer-logo-holder{
+    margin-top: 2.5rem;
+    
+    width: 13rem;
+    height: 6rem;
+    
+}
+.footer-logo-holder img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.footer-query{
+    display: flex;
+}
+
+.footer-text{
+
+    margin-left: 3rem;
+}
+.footer-text h2{
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.footer-query-2{
+    
+    padding: .7rem 0;
+    display: flex;
+    left: 0;
+    padding:2rem;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+
+    line-height: 2rem;
+    
+}
+
+.resources{
+    
+    margin-right: 8rem;
+    
+}
+.Policy{
+
+}
+
+
+
+
+.copyright{
+    
+    
+}
+.copy-wrapper{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.copyright-holder{
+    
+}
+.llc{
+    padding: .5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.copy-statement{
+    
+    margin-right: 5rem;
+}
+
+.statement{
+    padding: .5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    word-spacing: .3rem;
+    font-size: 1.1rem;
+
+
+}
+.social{
+    margin-right: 1rem;
+    padding: .5rem;
+}
+.social a{
+    
+    font-size: 1.4rem;
+    
+    margin: 1rem 1.2rem;
+    
+}
+.social a:hover{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slide{
+    0%{
+        transform: translateX(0%);
+    }
+    10%{
+        transform: translateX(-100%);
+    }
+    20%{
+        transform: translateX(-100%);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    40%{
+        transform: translateX(-200%);
+    }
+    50%{
+        transform: translateX(-200%);
+    }
+    60%{
+        transform: translateX(-200%);
+    }
+    70%{
+        transform: translateX(0%);
+    }
+    80%{
+        transform: translateX(0%);
+    }
+    90%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+
+@keyframes trans{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(-20%);
+    }
+    20%{
+        transform: translateX(-40%);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    40%{
+        transform: translateX(-140%);
+    }
+    50%{
+        transform: translateX(-180%);
+    }
+    60%{
+        transform: translateX(-240%);
+    }
+    70%{
+        transform: translateX(-280%);
+    }
+    80%{
+        transform: translateX(-320%);
+    }
+    90%{
+        transform: translateX(-385%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+/keysframe 3rd section/
+
+@keyframes trans2{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(-20%);
+    }
+    20%{
+        transform: translateX(-40%);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    40%{
+        transform: translateX(-140%);
+    }
+    50%{
+        transform: translateX(-180%);
+    }
+    60%{
+        transform: translateX(-240%);
+    }
+    70%{
+        transform: translateX(-280%);
+    }
+    80%{
+        transform: translateX(-320%);
+    }
+    90%{
+        transform: translateX(-405%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+/keyframes for 4th section/
+@keyframes trans4{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(-20%);
+    }
+    20%{
+        transform: translateX(-40%);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    40%{
+        transform: translateX(-140%);
+    }
+    50%{
+        transform: translateX(-180%);
+    }
+    60%{
+        transform: translateX(-240%);
+    }
+    70%{
+        transform: translateX(-280%);
+    }
+    80%{
+        transform: translateX(-320%);
+    }
+    90%{
+        transform: translateX(-379%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+/* end of 4th section*/
+
+
+
+
+
+
+
+
+/* start of 5th section*/
+
+/keyframes for 5th section/
+@keyframes ads{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(-600%);
+    }
+    20%{
+        transform: translateX(-850%);
+    }
+    30%{
+        transform: translateX(-1050%);
+    }
+    40%{
+        transform: translateX(-1250%);
+    }
+    50%{
+        transform: translateX(-1550%);
+    }
+    60%{
+        transform: translateX(-1750%);
+    }
+    70%{
+        transform: translateX(-1800%);
+    }
+    80%{
+        transform: translateX(-1900%);
+    }
+    90%{
+        transform: translateX(-2000%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+/* end of 5th section*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/start of media query/
+
+/small screen 425px/
+@media( max-width:425px){
+    .tv{
+        flex-wrap: wrap;
+        margin-bottom: .5rem;
+
+        flex-direction: colun;
+
+    }
+    .days-holder{
+        flex-direction: colun;
+        
+    }
+    
+
+
+}
+/end of small screen @425/
+
+/------------------------------------------------/
+
+
+
+/medium screen @640px/
+@media (max-width:640px) {
+    .tv{
+        flex-wrap: wrap;
+        margin-bottom: .5rem;
+
+    }
+    .footer-wrapper{
+        flex-wrap: wrap;
+        justify-content: space-evely;
+        align-items: ceter;
+
+    }
+    
+
+}
+
+
+
+/start of screen @960/
+
+
+@media( min-width:960px){
+    .nav-links{
+        display: flex;
+
+    }
+    .nav-items{
+        display: flex;
+    }
+    .search-bar input{
+        display: flex;
+    }
+}
+@media( max-width:960px){
+    .footer-wrapper{
+        flex-wrap: wrap;
+        justify-content: space-evely;
+        align-items: ceter;
+
+    }
+    .footer-query-2{
+        gap: 14rem;
+        
+    }
+    li br{
+        display: none;
+    }
+
+
+    br{
+        display: none !important ;
+    }
+    .copy-wrapper {
+    
+        
+        
+        }
+    .social{
+        display: flex;
+        order: 2;
+    }
+    .copy-statement{
+        order: 3;
+        
+    }
+    }
+
+
+
+
+    
+
+    
+    
+
+
+
+
+
+/end of screen @960/

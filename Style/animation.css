@@ -1,0 +1,73 @@
+/*.box-1{
+    width: 4.5rem;
+    height: 5rem;
+    background-color: yellow;
+    /*transition: all 6s ease-in;*/
+    /* 1st- name..2nd-duration...3rd-timing-function...4th delay */
+   /* animation:
+    boxchange 6s infinite;
+    position: absolute;
+}*/
+
+/*.box-1:hover{
+    background-color: greenyellow;
+}*/
+
+.loader>{
+    width: 14rem;
+    height: 14rem;
+    background-color:gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    gap:2rem;
+}
+
+.loader>div{
+    width: 3rem;
+    height: 3rem;
+    background-color: black;
+    border-radius: 50%;
+}
+   
+@keyframes .loading{
+    20%{
+        opacity:.1;
+       transform: scale(.1);
+    }
+    40%{
+        opacity:.3;
+       transform: scale(.3);
+    }
+    60%{
+        opacity:.5;
+        transform: scale(.5);
+    }
+    80%{
+        opacity:.8;
+        transform: scale(0.8);
+    }
+    100%{
+       opacity:1;
+       transform: scale(1);
+}
+
+
+/*@keyframes box-1colorchange {
+    20%{
+        background-color: pink;
+    }
+    40%{
+        background-color: aqua;
+    }
+    60%{
+        background-color: lightblue;
+    }
+    80%{
+        background-color: gold;
+    }
+    100%{
+        background-color: greenyellow;
+    }
+}*/

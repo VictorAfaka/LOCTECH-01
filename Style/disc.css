@@ -1,0 +1,72 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background: url(imagess/discord);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+
+}
+.content{
+    margin-top: 35px;
+    
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 350px;
+
+}
+.content a{
+    padding-right: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+button{
+    width: 60px;
+    height: 35px;
+    margin-top:30px;
+    color: darkorchid;
+    margin-right: 70px;
+    border-radius: 15px;
+    border: 1px solid white;
+}
+#box1{
+
+    width: 600px;
+    height: 400px;
+    position: relative;
+    top: 100px;
+    left: 390px;
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+p{
+    color: white;
+    text-align: center;
+}
+#but1{
+    width: 120px;
+    margin-left: 85px;
+    color: black;
+    position: relative;
+    bottom: 20px;
+    left: 15px;
+}
+#but2{
+    width: 230px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    position: relative;
+    bottom: 20px;
+    right: 15px;
+
+}

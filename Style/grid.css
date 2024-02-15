@@ -1,0 +1,41 @@
+.grid{
+    display: grid;
+    grid-template-columns: 20rem;
+    grid-template-rows: 5;
+    gap: 1rem;
+}
+
+.grid>div{
+    background-color: blue;
+    color: white;
+    margin: .5rem;
+}
+
+.pic_grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-content: center;
+    grid-row: .5rem;
+    gap: .1rem;
+}
+
+.container{
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    grid-template-rows: repeat(3, 3fr);
+    justify-content: center;
+    align-content: center;
+
+    gap: .18rem;
+}
+
+.container>div{
+    margin: 5px;
+
+}
+
+.box{
+    grid-row
+}
